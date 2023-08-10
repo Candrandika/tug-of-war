@@ -1,0 +1,112 @@
+:root {
+    --col-gray: rgb(131, 131, 131);
+    --col-red: rgb(255, 70, 70);
+    --col-white: white;
+    --col-semi-red: rgb(255, 147, 147);
+}
+
+* {
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: gray;
+}
+
+#wrapper > * {
+    height: 500px;
+    width: 900px;
+    background-color: var(--col-red);
+    border-radius: 20px;
+}
+
+#splash {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+#game {
+    display: none;
+}
+
+#over {
+    display: none;
+    place-content: center;
+    background-color: var(--col-red);
+}
+
+#over-text {
+    text-align: center;
+    color: var(--col-white);
+    font-size: large;
+    font-weight: bold;
+}
+
+.htp {
+    background-color: var(--col-semi-red);
+    border-radius: 10px;
+    border: 0;
+    padding: 10px;
+}
+
+.htp-title {
+    color: var(--col-white);
+    font-weight: bold;
+    text-indent: 1.4rem;
+}
+
+.title {
+    font-weight: bold;
+    text-align: center;
+    font-size: large;
+    color: var(--col-white);
+}
+
+ul {
+    color: var(--col-white);
+}
+
+.d-none {
+    display: none;
+}
+
+input[type=text], button {
+    padding: 10px;
+    border-radius: 10px;
+    outline: 0;
+}
+
+input[type=text] {
+    border: 0;
+    /* border: 1px solid var(--col-gray); */
+}
+
+button {
+    background-color: var(--col-white);
+    color: var(--col-red);
+    border: 0;
+    font-weight: bold;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.indent {
+    text-indent: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}

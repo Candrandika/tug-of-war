@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarik Tambang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <form id="splash" action="javascript:void(0)" onsubmit="checkName()">
+            <div class="title">Permainan Tarik Tambang</div>
+            <div class="htp">
+                <div class="htp-title">Cara Bermain</div>
+                <ul>
+                    <li>Masukkan nama pemain 1 dan 2</li>
+                    <li>Klik tombol mulai</li>
+                    <li>Kontroler :
+                        <div class="indent">Pemain 1 : Q dan F</div>
+                        <div class="indent">Pemain 2 : P dan J</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="input-group">
+                <input type="text" name="p1" id="p1" placeholder="Masukkan Nama Pemain 1" required>
+                <input type="text" name="p2" id="p2" placeholder="Masukkan Nama Pemain 2" required>
+            </div>
+            <button type="submit">Mulai!</button>
+        </form>
+        <canvas id="game"></canvas>
+        <div id="over">
+            <div id="over-text"></div>
+            <div class="btn-group">
+                <button id="restart" onclick="exitGame('restart')">Mulai Ulang</button>
+                <button id="quit" onclick="exitGame('exit')">Keluar</button>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
